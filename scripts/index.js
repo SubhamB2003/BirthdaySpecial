@@ -21,6 +21,7 @@ const confettiSettings = { target: 'confetti' };
 const confetti = new window.ConfettiGenerator(confettiSettings);
 confetti.render();
 
+
 const second = 1000,
   minute = second * 60,
   hour = minute * 60,
@@ -499,3 +500,9 @@ x = setInterval(function () {
   //     console.log("happy birthday");
   // }
 }, second);
+
+
+window.onload = function () {
+  var audio = document.getElementById("backgroundMusic");
+  audio.play();
+};
